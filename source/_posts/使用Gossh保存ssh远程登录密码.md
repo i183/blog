@@ -26,7 +26,7 @@ $ gossh add <服务器名称> <用户名> <IP> <端口> <密码>
 ```
 例如
 ````
-$ gossh add serverName root@127.0.0.1 22 password
+$ gossh add serverName root 127.0.0.1 22 password
 ````
 
 #### conn
