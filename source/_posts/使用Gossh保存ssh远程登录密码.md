@@ -17,3 +17,40 @@ Gossh是使用Go编写的远程登录客户端，可以一键登录远程服务�
 
 ## 使用方法
 下载后建议把gossh放到 /usr/bin 目录下，这样无需配置环境变量便可在任意目录下调用
+
+### 命令
+#### add
+添加一个远程服务器
+```
+$ gossh add <服务器名称> <用户名> <IP> <端口> <密码>
+```
+例如
+````
+$ gossh add serverName root@127.0.0.1 22 password
+````
+
+#### conn
+连接远程服务器
+```
+$ gossh conn <服务器名称>
+```
+例如
+```
+$ gossh conn serverName
+```
+
+#### ls
+显示所有服务器列表
+```
+$ gossh ls
+```
+
+#### rm
+删除一个远程服务器
+```
+$ gossh rm <服务器名称>
+```
+例如
+```
+$ gossh rm serverName
+```
